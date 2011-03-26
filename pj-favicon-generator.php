@@ -41,17 +41,17 @@ define( 'PJFAV_ADMIN_OPTIONS',	'pj_favicon_generator_options' );
 // INTERNATIONALIZATION
 load_plugin_textdomain( PJFAV, null, PJFAV_REL );
 
-if ( is_admin() && current_user_can( 'edit_themes' ) ) :
+if( is_admin() ) :
 	// ADMIN CONTROLLER
 	require_once( PJFAV_CORE.'/controllers/admin.php' );
-else :
+elseif( ! is_admin() ) :
 	// PUBLIC CONTROLLER
 	require_once( PJFAV_CORE.'/controllers/public.php' );
 endif;
 
 /* DEBUG HELPERS
 ************************************/
-if( ! function_exists( 'pring_r' ) ! function_exists( '_pring_r' ) ) :
+if( ! function_exists( 'pring_r' ) && ! function_exists( '_pring_r' ) ) :
 
 	function pring_r( $arr ) {
 		echo _pring_r( $arr );
