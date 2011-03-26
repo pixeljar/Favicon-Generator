@@ -1,4 +1,18 @@
-.favicon-generator .spsn-container {
+/* Dashboard Styles
+*****************************************************/
+#pjfav-dashboard .supported {
+	color: #009900;
+	font-weight: bold;
+}
+
+#pjfav-dashboard .not-supported {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+/* Icon Management Styles
+*****************************************************/
+.pjfav-manage .spsn-container {
 	-moz-background-clip:border !important;
 	-moz-background-inline-policy:continuous !important;
 	-moz-background-origin:padding !important;
@@ -15,7 +29,7 @@
 	text-shadow:0 1px 0 rgba(255, 255, 255, 0.796);
 }
 
-.favicon-generator .spsn-credit {
+.pjfav-manage .spsn-credit {
 	color:#999999;
 	padding:0.8em !important;
 	position:absolute;
@@ -23,6 +37,6 @@
 	top:0;
 }
 
-.favicon-generator .spsn-sponsor-text a {
+.pjfav-manage .spsn-sponsor-text a {
 	color: #21759B !important;
 }
