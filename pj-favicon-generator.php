@@ -41,7 +41,7 @@ define( 'PJFAV_ADMIN_OPTIONS',	'pj_favicon_generator_options' );
 // INTERNATIONALIZATION
 load_plugin_textdomain( PJFAV, null, PJFAV_REL );
 
-if ( is_admin() ) :
+if ( is_admin() && current_user_can( 'edit_themes' ) ) :
 	// ADMIN CONTROLLER
 	require_once( PJFAV_CORE.'/controllers/admin.php' );
 else :
