@@ -2,9 +2,9 @@
 Contributors: brandondove, lordleiter
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3441397
 Tags: favicon
-Requires at least: 2.8
-Tested up to: 2.9.2
-Stable tag: 1.5
+Requires at least: 3.1
+Tested up to: 3.1
+Stable tag: 2.0
 
 == Description ==
 
@@ -63,6 +63,14 @@ If that doesn't work, it could also be because your theme doesn't make use of Wo
 4. Added checks to make sure certain necessary directories and permissions were set properly.
 5. Suppressed ugly warnings that were displayed when the upload directories weren't set properly.
 6. Added support for l10n.
+
+= Version 2.0 =
+
+1. Complete code reorganization
+2. Dropped PHP4 compatibility
+3. Security, security, security
+4. Substitute built-in WordPress APIs for some of our custom code
+5. props to #plugindevbook for the tips
 
 == Screenshots ==
 
