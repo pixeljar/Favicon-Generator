@@ -1,0 +1,28 @@
+.favicon-generator .spsn-container {
+	-moz-background-clip:border !important;
+	-moz-background-inline-policy:continuous !important;
+	-moz-background-origin:padding !important;
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	background:#ECECEC none repeat scroll 0 0 !important;
+	border:1px solid #DFDFDF !important;
+	font-size:0.95em;
+	margin:0.4em 0 0.5em !important;
+	padding:0.5em !important;
+	position:relative;
+	text-shadow:0 1px 0 rgba(255, 255, 255, 0.796);
+}
+
+.favicon-generator .spsn-credit {
+	color:#999999;
+	padding:0.8em !important;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.favicon-generator .spsn-sponsor-text a {
+	color: #21759B !important;
+}
