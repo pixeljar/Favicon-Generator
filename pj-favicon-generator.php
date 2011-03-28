@@ -28,6 +28,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // SET UP PATH CONSTANTS
 define( 'PJFAV',				'pjfavgen' );
+define( 'PJFAV_VERSION',		'2.0' );
 define( 'PJFAV_URL',			plugin_dir_url( __FILE__ ) );
 define( 'PJFAV_ABS',			plugin_dir_path( __FILE__ ) );
 define( 'PJFAV_REL',			basename( dirname( __FILE__ ) ) );
