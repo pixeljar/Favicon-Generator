@@ -38,10 +38,21 @@ define( 'PJFAV_CSS',			PJFAV_URL.'css/' );
 define( 'PJFAV_JS',				PJFAV_URL.'js/' );
 define( 'PJFAV_ADMIN_OPTIONS',	'pj_favicon_generator_options' );
 
+$uploads = wp_upload_dir( date( 'Y/m' ) );
+define( 'PJFAV_UPLOAD_PATH',	$uploads['basedir'].'/favicons' );
+define( 'PJFAV_UPLOAD_URL',	$uploads['baseurl'].'/favicons' );
+
 // INTERNATIONALIZATION
 load_plugin_textdomain( PJFAV, null, PJFAV_REL );
 
 if( is_admin() ) :
+	// SETUP WP FileSystem API
+	if( !function_exists('WP_Filesystem') )
+		require_once( ABSPATH . '/wp-admin/includes/file.php' );
+
+	// Connect the filesystem
+	WP_Filesystem();
+	
 	// ADMIN CONTROLLER
 	require_once( PJFAV_CORE.'/controllers/admin.php' );
 elseif( ! is_admin() ) :
