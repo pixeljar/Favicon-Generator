@@ -31,6 +31,8 @@ class Image {
           break;
         case IMAGETYPE_PNG:
           $this->imageHandle=imagecreatefrompng($imgpath);
+          imagealphablending( $this->imageHandle, true ); // setting alpha blending on
+          imagesavealpha( $this->imageHandle, true ); // save alphablending setting (important)
           $this->imageExtension='png';
           break;
         case IMAGETYPE_JPEG:
