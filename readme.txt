@@ -67,7 +67,7 @@ If that doesn't work, it could also be because your theme doesn't make use of Wo
 = Version 2.0 =
 
 1. Complete code reorganization
-2. Dropped PHP4 compatibility
+2. Dropped PHP4 support
 3. Security, security, security
 4. Substitute built-in WordPress APIs for some of our custom code
 5. props to #plugindevbook for the tips
