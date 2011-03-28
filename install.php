@@ -8,6 +8,8 @@
 
 $defaults = array(
 	'favicon'				=> '<empty>',
+	'favicon_src'			=> '<empty>',
+	'favicon_type'			=> '<empty>',
 	'jpg'					=> ( function_exists( 'imagecreatefromjpeg' ) ? true : false ),
 	'gif'					=> ( function_exists( 'imagecreatefromgif' ) ? true : false ),
 	'png'					=> ( function_exists( 'imagecreatefrompng' ) ? true : false ),
