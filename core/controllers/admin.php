@@ -21,6 +21,10 @@ class pjfav_main_controller {
 	 */
 	function activate() {
 		include_once( PJFAV_ABS.'install.php' );
+		
+		$options = get_option( PJFAV_ADMIN_OPTIONS );
+		if( version_compare( $options['version'], PJFAV_VERSION, '<' ) )
+			include_once( PJFAV_ABS.'upgrade.php' );
 	}
 	
 	/**
