@@ -10,6 +10,7 @@ $defaults = array(
 	'favicon'				=> '<empty>',
 	'favicon_src'			=> '<empty>',
 	'favicon_type'			=> '<empty>',
+	'version'				=> '1.5',
 	'jpg'					=> ( function_exists( 'imagecreatefromjpeg' ) ? true : false ),
 	'gif'					=> ( function_exists( 'imagecreatefromgif' ) ? true : false ),
 	'png'					=> ( function_exists( 'imagecreatefrompng' ) ? true : false ),
